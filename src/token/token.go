@@ -32,6 +32,10 @@ const (
 	FUNCTION = "FUNCTION"
 	LET      = "LET"
 	RETURN   = "RETURN"
+
+	// Operators
+	MINUS = "-"
+	BANG  = "!"
 )
 
 var keywords = map[string]TokenType{
