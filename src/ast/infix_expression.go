@@ -6,10 +6,10 @@ import (
 )
 
 type InfixExpression struct {
-	Token    token.Token
 	Left     Expression
-	Operator string
 	Right    Expression
+	Token    token.Token
+	Operator string
 }
 
 func (ie *InfixExpression) expressionNode()      {}

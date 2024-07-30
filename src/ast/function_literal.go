@@ -7,9 +7,9 @@ import (
 )
 
 type FunctionLiteral struct {
-	Token      token.Token // the fn token
-	Parameters []*Identifier
 	Body       *BlockStatement
+	Token      token.Token
+	Parameters []*Identifier
 }
 
 func (fl *FunctionLiteral) expressionNode()      {}

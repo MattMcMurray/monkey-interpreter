@@ -6,8 +6,8 @@ import (
 )
 
 type ReturnStatement struct {
-	Token       token.Token // the 'return' token
 	ReturnValue Expression
+	Token       token.Token
 }
 
 func (rs *ReturnStatement) statementNode()       {}
